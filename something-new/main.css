@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  color: #ffffff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/picture.jpg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-size: 1.2em;
+  font-variant-caps: all-small-caps;
+  margin-bottom: 15px;
+}
+
+.moto {
+  width: 250px;
+  font-variant: small-caps;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #444647;
+
+  width: 100px;
+  padding: 8px;
+  border-radius: 2px;
+  text-align: center;
+  margin: 30px 0 40px 0;
+  font-variant-caps: all-small-caps;
+}
+
+.name,
+.moto {
+  padding: 0 33px;
+}
+
+.button {
+  margin-left: 33px;
+}
+.button a {
+  text-decoration: none;
+  color: #444647;
+}
+
+.button a:visited,
+.button a:hover {
+  color: #444647;
+}
+
+.test-nav,
+.test-nav-two {
+  color: #444647;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100%;
+  padding: 0 33px;
+  background-color: #ffffff;
+}
+
+.btn {
+  font-variant-caps: all-small-caps;
+  font-weight: 600;
+}
+
+.tacke {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  height: 20px;
+}
+
+.tacke .one,
+.tacke .two,
+.tacke .three,
+.tacke .four {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #bfc1c4;
+}
+
+.tacke .active {
+  background-color: #444647;
+}
+
+.icon img {
+  width: 18px;
+}
+
+/* Second page */
+
+.page-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.section {
+  color: #626a72;
+  margin-top: 10%;
+  font-size: 1.1em;
+  line-height: 2em;
+  padding: 0 20px 0 33px;
+  overflow: hidden;
+  flex: 1; /* Making section element strech even tho there is not enough text*/
+}
+
+.flow {
+  font-size: 5em;
+  float: left;
+  padding: 28px 20px 20px 0;
+  color: #2b3136;
+}
+
+p:nth-child(1) {
+  padding-bottom: 40px;
+}
+
+/* Start of a third page */
+
+.page-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 100vh;
+  padding: 0 33px;
+  background-color: #ffffff;
+}
+
+.option-nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.comments-nav {
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #2b3136;
+}
+
+.close {
+  color: #2b3136;
+}
+
+.row {
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 0.9em;
+}
+
+.avatar {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 20px 20px 0;
+  background-image: url(images/face1.jpg);
+  background-size: contain;
+}
+
+.avatar-two {
+  background-image: url(images/face2.jpg);
+  background-size: contain;
+}
+
+.avatar-three {
+  background-image: url(images/face3.jpg);
+  background-size: 100%;
+}
+.avatar-four {
+  background-image: url(images/face4.jpg);
+}
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #626a72;
+  margin-left: 10px;
+}
+
+.username,
+.time {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.username {
+  color: #2e3036;
+  font-weight: bold;
+}
+
+.time {
+  color: #626a72;
+}
+.time {
+  margin-left: 10px;
+}
+
+.comment {
+  margin-top: -18%;
+  margin-left: 70px;
+  text-align: left;
+  color: #626a72;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 430px) and (max-width: 1299px) {
+  .container {
+    display: flex;
+    background-color: #dae2eb;
+    height: 3000px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page,
+  .page-two,
+  .page-three {
+    width: 420px;
+    height: 800px;
+  }
+  .page,
+  .page-two,
+  .page-three {
+    margin-bottom: 30px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1300px) {
+  .container {
+    display: flex;
+    background-color: #dae2eb;
+    justify-content: space-around;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+  }
+
+  .page,
+  .page-two,
+  .page-three {
+    width: 420px;
+    height: 800px;
+  }
+}
